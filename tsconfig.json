@@ -1,0 +1,3 @@
+{
+  "extends": "@soma/tsconfig/base.json"
+}

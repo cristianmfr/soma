@@ -1,0 +1,24 @@
+{
+  "name": "@soma/auth",
+  "type": "module",
+  "exports": {
+    ".": {
+      "default": "./src/index.ts"
+    },
+    "./*": {
+      "default": "./src/*.ts"
+    }
+  },
+  "devDependencies": {
+    "typescript": "catalog:",
+    "@soma/tsconfig": "workspace:*"
+  },
+  "dependencies": {
+    "@soma/db": "workspace:*",
+    "@soma/env": "workspace:*",
+    "better-auth": "catalog:",
+    "dotenv": "catalog:",
+    "slugify": "^1.6.9",
+    "zod": "catalog:"
+  }
+}

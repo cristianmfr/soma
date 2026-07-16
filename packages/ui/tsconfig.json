@@ -1,0 +1,17 @@
+{
+  "extends": "@soma/tsconfig/react-library.json",
+  "compilerOptions": {
+    "paths": {
+      "@soma/ui/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}
