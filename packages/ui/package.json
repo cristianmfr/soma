@@ -30,7 +30,7 @@
     "@types/react-dom": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
-    "@soma/tsconfig": "workspace:*"
+    "@soma/typescript-config": "workspace:*"
   },
   "scripts": {
     "check-types": "tsc --noEmit"

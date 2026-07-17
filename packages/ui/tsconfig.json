@@ -1,5 +1,5 @@
 {
-  "extends": "@soma/tsconfig/react-library.json",
+  "extends": "@soma/typescript-config/react-library.json",
   "compilerOptions": {
     "paths": {
       "@soma/ui/*": [

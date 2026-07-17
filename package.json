@@ -24,7 +24,8 @@
   "workspaces": {
     "packages": [
       "apps/*",
-      "packages/*"
+      "packages/*",
+      "config/*"
     ],
     "catalog": {
       "dotenv": "^17.4.2",
@@ -52,7 +53,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@soma/tsconfig": "workspace:*",
+    "@soma/typescript-config": "workspace:*",
     "@biomejs/biome": "2.5.4",
     "@types/bun": "catalog:",
     "turbo": "^2.10.2",

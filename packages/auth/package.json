@@ -11,7 +11,7 @@
   },
   "devDependencies": {
     "typescript": "catalog:",
-    "@soma/tsconfig": "workspace:*"
+    "@soma/typescript-config": "workspace:*"
   },
   "dependencies": {
     "@soma/db": "workspace:*",

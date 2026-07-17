@@ -37,15 +37,15 @@ export function createAuth() {
       maxPasswordLength: 128,
       autoSignIn: true,
       resetPasswordTokenExpiresIn: 60 * 60,
-      sendResetPassword: async ({ user, url }) => {
-        console.log(`Reset password email for ${user.email}: ${url}`);
+      sendResetPassword: async ({ token }) => {
+        console.log(token);
       },
     },
 
     emailVerification: {
       autoSignInAfterVerification: true,
-      sendVerificationEmail: async ({ user, url }) => {
-        console.log(`Verification email for ${user.email}: ${url}`);
+      sendVerificationEmail: async ({ token }) => {
+        console.log(token);
       },
     },
 

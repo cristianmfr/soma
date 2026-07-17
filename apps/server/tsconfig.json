@@ -1,5 +1,5 @@
 {
-  "extends": "@soma/tsconfig/base.json",
+  "extends": "@soma/typescript-config/base.json",
   "compilerOptions": {
     "composite": true,
     "outDir": "dist",

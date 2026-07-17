@@ -14,6 +14,6 @@
   "devDependencies": {
     "typescript": "catalog:",
     "@types/bun": "catalog:",
-    "@soma/tsconfig": "*"
+    "@soma/typescript-config": "*"
   }
 }

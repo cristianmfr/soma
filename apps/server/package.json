@@ -20,7 +20,7 @@
     "zod": "catalog:"
   },
   "devDependencies": {
-    "@soma/tsconfig": "workspace:*",
+    "@soma/typescript-config": "workspace:*",
     "typescript": "catalog:",
     "@types/bun": "catalog:",
     "tsdown": "^0.22.3"
