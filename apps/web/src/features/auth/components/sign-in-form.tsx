@@ -101,7 +101,7 @@ export function SignInForm() {
         </Field>
       </form>
 
-      <div className="select-none text-center text-muted-foreground text-xs *:[p]:text-xs">
+      <div className="select-none text-center text-muted-foreground *:[p]:text-xs">
         <p className="*:[a]:transition *:[a]:ease-in-out *:[a]:hover:text-white">
           Don&apos;t have an account? <Link to="/sign-in">Sign up</Link>
         </p>
