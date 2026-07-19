@@ -1,8 +1,8 @@
 import { createDb, createRedis } from "@soma/db";
-import { env } from "@soma/env/server";
+import { env } from "@soma/env";
 import { betterAuth } from "better-auth";
 import { prismaAdapter } from "better-auth/adapters/prisma";
-import { organization } from "better-auth/plugins";
+import { magicLink, organization } from "better-auth/plugins";
 import { ac } from "./lib/access-control";
 import { admin, member, owner } from "./lib/roles";
 
@@ -44,12 +44,26 @@ export function createAuth() {
 
     emailVerification: {
       autoSignInAfterVerification: true,
+      sendOnSignUp: true,
       sendVerificationEmail: async ({ token }) => {
         console.log(token);
       },
     },
 
     plugins: [
+      magicLink({
+        disableSignUp: false,
+        sendMagicLink: async ({ email, token, url, metadata }) => {
+          const payload = {
+            email,
+            token,
+            url,
+            metadata,
+          };
+
+          console.log(JSON.stringify(payload));
+        },
+      }),
       organization({
         allowUserToCreateOrganization: true,
 
@@ -125,3 +139,5 @@ export function createAuth() {
     trustedOrigins,
   });
 }
+
+export const auth = createAuth();

@@ -1,13 +1,10 @@
 {
-  "extends": "@soma/typescript-config/base.json",
+  "extends": "@soma/typescript-config/elysiajs.json",
   "compilerOptions": {
-    "composite": true,
-    "outDir": "dist",
     "paths": {
       "@/*": [
         "./src/*"
       ]
-    },
-    "jsx": "react-jsx"
+    }
   }
 }
